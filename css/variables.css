@@ -1,0 +1,10 @@
+:root {
+  --color-black: #000000;
+  --color-text: #e7e9ea;
+  --color-text-violetred: #c71585;
+  --color-dark-text: #6d6d6d;
+  --color-hover: rgba(239, 243, 244, 0.1);
+  --color-border: rgba(70, 70, 70, 0.6);
+  --color-sidebar: rgb(22, 24, 28);
+  --color-brand: #1d9bf0;
+}

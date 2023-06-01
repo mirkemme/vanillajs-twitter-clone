@@ -1,0 +1,186 @@
+.mainContainer {
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+header {
+  height: 100vh;
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.mainContent {
+  padding: 0 20px;
+}
+
+.postBar {
+  width: 100%;
+  /* height: auto; */
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+
+.sidebar {
+  height: 100%;
+  margin: 20px;
+  background-color: var(--color-sidebar);
+  border-radius: 20px;
+}
+
+/* media query mobile e tablet*/
+@media screen and (max-width: 1023px) {
+  header {
+    width: 88px;
+    align-items: flex-end;
+  }
+
+  .navLink__content {
+    width: 55px;
+    height: 55px;
+  }
+
+  .navLink__label {
+    display: none;
+  }
+
+  .buttonTweet {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .buttonTweet svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+  }
+
+  .buttonTweet .buttonTweet__label {
+    display: none;
+  }
+
+  .buttonTweet__icon {
+    display: flex;
+  }
+
+  .profileButton {
+    width: 88px;
+    justify-content: flex-end;
+  }
+
+  .profileButton__user,
+  .profileButton__actions {
+    display: none;
+  }
+
+  .mainContent {
+    width: calc(100% - 88px);
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+/* media query desktop */
+@media screen and (min-width: 1024px) and (max-width: 1298px) {
+  header {
+    width: 88px;
+    align-items: flex-end;
+  }
+
+  .navLink__label {
+    display: none;
+  }
+
+  .buttonTweet {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .buttonTweet svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+  }
+
+  .buttonTweet .buttonTweet__label {
+    display: none;
+  }
+
+  .buttonTweet__icon {
+    display: flex;
+  }
+
+  .profileButton {
+    width: 88px;
+    justify-content: flex-end;
+  }
+
+  .profileButton__user,
+  .profileButton__actions {
+    display: none;
+  }
+
+  .mainContent {
+    width: calc(100% - 88px);
+  }
+}
+
+@media screen and (min-width: 1299px) {
+  header {
+    width: 20%;
+  }
+
+  .buttonTweet .buttonTweet__label {
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .buttonTweet {
+    cursor: pointer;
+    min-height: 50px;
+  }
+
+  .buttonTweet .buttonTweet__icon {
+    display: none;
+  }
+
+  .mainContainer {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .mainContent {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  .sidebar {
+    width: 40%;
+  }
+}

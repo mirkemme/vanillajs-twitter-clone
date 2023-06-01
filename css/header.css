@@ -1,0 +1,146 @@
+.mainLogo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.logoWrapper {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.logoWrapper:hover {
+  background-color: var(--color-hover);
+}
+
+.logoWrapper svg,
+.navLink__icon svg {
+  width: 30px;
+  height: auto;
+  fill: var(--color-text);
+}
+
+/* Nav section */
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  list-style-type: none;
+}
+
+.navItem:hover .navLink__content {
+  background-color: var(--color-hover);
+}
+
+.navLink {
+  display: inline-block;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.navLink__content {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 30px;
+}
+
+.navItem.active .navLink__content {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+.navItem.active .navLink__icon svg {
+  fill: var(--color-brand);
+}
+
+.navLink__icon {
+  position: relative;
+  display: flex;
+}
+
+.navItem.dot .navLink__icon::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+}
+/* End nav section */
+
+/* headerCTA */
+/* button tweet */
+.headerCta {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  margin: 12px 0;
+}
+
+.buttonTweet {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  background-color: var(--color-brand);
+}
+
+/* endbutton tweet */
+/* End headerCTA */
+
+/* profile button*/
+.profileButton {
+  /* posizionare l'elemento fissato in basso */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.profileButton__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.profileButton__alias {
+  font-weight: 700;
+}
+
+.profileButton__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileButton__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileButton__actions svg {
+  width: 24px;
+  height: auto;
+  fill: var(--color-text);
+}
+/* endprofile button*/

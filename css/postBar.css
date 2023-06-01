@@ -1,0 +1,86 @@
+.postBar__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.postBar__imageProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.postBar__imageProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postBar__input {
+  width: 100%;
+  height: 50%;
+  padding-top: 20px;
+  font-size: 20px;
+  color: var(--color-dark-text);
+  background-color: transparent;
+  border: none;
+}
+
+.postBar__input:focus {
+  outline: none;
+}
+
+.postBar__input:focus::placeholder {
+  color: transparent;
+}
+
+.postBar__buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.postBar__icons__container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.postBar__icon {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.postBar__icon svg {
+  width: 20px;
+  fill: var(--color-brand);
+  object-fit: cover;
+}
+
+.postBar__button__twitta {
+  width: 80px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  text-align: center;
+  background-color: var(--color-brand);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
