@@ -27,6 +27,11 @@
   gap: 5px;
 }
 
+.tweet__content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .tweet__content__user {
   display: flex;
   flex-wrap: wrap;
