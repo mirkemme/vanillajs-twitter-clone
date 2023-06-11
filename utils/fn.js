@@ -24,7 +24,7 @@ export const tweetGen = (tweetData) => {
 
     userImageEl.src = tweetData.user?.image || imagePlaceholder;
     userImageEl.alt = tweetData.user?.username;
-    nameEl.textContent = tweetData.user?.firstName + tweetData.user?.lastName || "Salvatore Imerese";
+    nameEl.textContent = (tweetData.user?.firstName || "Salvatore") + " " + (tweetData.user?.lastName || "Imerese");
     userNameEl.textContent = "@" + (tweetData.user?.username || "salvatoreimerese");
     textContentEl.textContent = tweetData.body;
     likeValueEl.textContent = tweetData.reactions;

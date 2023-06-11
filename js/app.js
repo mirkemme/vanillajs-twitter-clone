@@ -9,7 +9,13 @@ const tabsEl = document.querySelectorAll(".tabBar__tab");
 const newTweet = document.querySelector(".postBar");
 const followItemsEl = document.querySelector(".whoToFollow__items");
 
+let prodotti = [];
 /*** ASYNC ***/
+fetch("https://dummyjson.com/products")
+    .then(res => res.json())
+    .then(x => x.products.forEach(prodotto => prodotti.push(prodotto)))
+    .then(() => console.log(prodotti[0]));
+
 const remoteData = Promise.all([GET("/posts"), GET("/users")]);
 
 remoteData
