@@ -89,6 +89,8 @@ header {
   }
 
   .mainContent {
+    padding-left: 1%;
+    padding-right: 1%;
     width: calc(100% - 88px);
   }
 

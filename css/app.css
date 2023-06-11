@@ -9,6 +9,7 @@
 @import "./layout.css";
 
 body {
+  min-width: 360px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: var(--color-black);
